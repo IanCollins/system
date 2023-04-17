@@ -1,0 +1,73 @@
+<!--
+  popen interface mocks.
+
+  $Id: popen.xml 15645 2011-11-24 21:34:02Z ian $
+-->
+
+<Library id="utils/popen" namespace="utils">
+
+  <StreamedType type="utils::OutputInfo"/>
+
+  <Function id="popen" return="utils::OutputInfo">
+    <Parameter type="std::string" const="true" reference="true"/>
+  </Function>
+
+  <Function id="pclose" return="int">
+    <Parameter type="utils::OutputInfo" const="true" reference="true"/>
+  </Function>
+
+  <Class id="OutputInfo">
+
+    <Constructor>
+      <Default initialise="in"/>
+      <Default initialise="out"/>
+      <Default initialise="err"/>
+      <Default initialise="pid"/>
+    </Constructor>
+
+    <Constructor>
+      <Parameter type="int" initialise="in"/>
+      <Parameter type="int" initialise="out"/>
+      <Parameter type="int" initialise="err"/>
+      <Parameter type="int" initialise="pid"/>
+    </Constructor>
+
+    <Function id="setNonBlocking" return="void">
+    </Function>
+
+    <Function id="close" return="bool">
+      <Parameter type="bool"/>
+    </Function>
+
+  </Class>
+
+<!--
+  <Class id="OutputPairReaders">
+
+    <Constructor>
+      <Parameter type="utils::OutputInfo" const="true" reference="true"/>
+      <Parameter type="utils::StreamReader" reference="true"/>
+      <Parameter type="utils::StreamReader" reference="true"/>
+    </Constructor>
+
+    <Function id="close" return="int">
+    </Function>
+
+  </Class>
+-->
+
+  <Class id="LogToFileStreamReader">
+
+    <Function id="run" return="void">
+    </Function>
+
+  </Class>
+
+  <Class id="StreamStreamReader">
+
+    <Function id="run" return="void">
+    </Function>
+
+  </Class>
+
+</Library>
