@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2009-2012.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -19,7 +19,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     using ArgV = std::vector<std::string>;
 
@@ -308,12 +308,12 @@ namespace masuma
 }
 
 #define SIMPLE_OPTION( opt ) \
-  typedef utils::SimpleOption<OptionParamerType,utils:: opt> opt ## Option
+  typedef system::SimpleOption<OptionParamerType,system:: opt> opt ## Option
 
 #define PARAMATER_OPTION( opt, param )                                    \
-  typedef utils::ParameterisedOption<OptionParamerType,utils:: opt,param> opt ## Option
+  typedef system::ParameterisedOption<OptionParamerType,system:: opt,param> opt ## Option
 
 #define DOUBLE_PARAMATER_OPTION( opt, param1, param2)                                    \
-  typedef utils::DoubleParameterisedOption<OptionParamerType,utils:: opt,param1,param2> opt ## Option
+  typedef system::DoubleParameterisedOption<OptionParamerType,system:: opt,param1,param2> opt ## Option
 
 #endif

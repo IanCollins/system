@@ -16,7 +16,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   SockaddrIn::SockaddrIn() : sockaddr_in {}
   {
@@ -118,7 +118,7 @@ namespace masuma::utils
 
         setBlocking();
       }
-      catch( const utils::Exception& e )
+      catch( const system::Exception& e )
       {
         setBlocking();
 

@@ -25,7 +25,7 @@ namespace
 {
   extern "C" void* reader( void* p )
   {
-    auto* reader = static_cast<masuma::utils::StreamReader*>(p);
+    auto* reader = static_cast<masuma::system::StreamReader*>(p);
 
     try
     {
@@ -39,7 +39,7 @@ namespace
   }
 }
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   setNonBlocking( int fd )
@@ -58,8 +58,8 @@ namespace masuma::utils
   void
   OutputInfo::setNonBlocking( int fd0, int fd1 )
   {
-    utils::setNonBlocking( fd0 );
-    utils::setNonBlocking( fd1 );
+    system::setNonBlocking( fd0 );
+    system::setNonBlocking( fd1 );
   }
 
   void
@@ -240,7 +240,7 @@ namespace masuma::utils
   void
   LogToFileStreamReader::run()
   {
-    utils::FileStreambuf fb( fd );
+    system::FileStreambuf fb( fd );
 
     std::istream in(&fb);
     std::string line;
@@ -265,7 +265,7 @@ namespace masuma::utils
   {
     std::string line;
 
-    utils::FileStreambuf buf( fd );
+    system::FileStreambuf buf( fd );
 
     std::istream in(&buf);
 

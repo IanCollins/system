@@ -21,7 +21,7 @@
 #include <cstdio>
 #include <utility>
 
-namespace masuma::utils
+namespace masuma::system
 {
   class Exception : public std::exception
   {
@@ -186,7 +186,7 @@ namespace masuma::utils
 // The only macros you'll find in this code!!
 //
 #define Throw( error, info ) \
-        throw utils::Exception( (error), (info),  __FILE__, __LINE__  )
+        throw system::Exception( (error), (info),  __FILE__, __LINE__  )
 
 #define Whinge( type, info ) \
         throw type##Exception( (info), __FILE__, __LINE__ )
@@ -195,45 +195,45 @@ namespace masuma::utils
         throw type##Exception( __FILE__, __LINE__ )
 
 #define Check( fn, args ) \
-        masuma::utils::Exception::check( #fn, fn args, __FILE__, __LINE__ )
+        masuma::system::Exception::check( #fn, fn args, __FILE__, __LINE__ )
 
 #define CheckM( fn, args, message ) \
-        masuma::utils::Exception::check( #fn, fn args, __FILE__, __LINE__, message )
+        masuma::system::Exception::check( #fn, fn args, __FILE__, __LINE__, message )
 
 #define CheckFn( fn, args, errorHandler ) \
-        masuma::utils::Exception::check( #fn, fn args, __FILE__, __LINE__, errorHandler )
+        masuma::system::Exception::check( #fn, fn args, __FILE__, __LINE__, errorHandler )
 
 #define CheckNull( fn, args ) \
-        masuma::utils::Exception::checkNull( #fn, fn args, __FILE__, __LINE__ )
+        masuma::system::Exception::checkNull( #fn, fn args, __FILE__, __LINE__ )
 
 #define CheckNullError( fn, args, error ) \
-        masuma::utils::Exception::checkNull( #fn, fn args, error, __FILE__, __LINE__ )
+        masuma::system::Exception::checkNull( #fn, fn args, error, __FILE__, __LINE__ )
 
 #define CheckNullM( fn, args, message ) \
-        masuma::utils::Exception::checkNull( #fn, fn args, __FILE__, __LINE__, message )
+        masuma::system::Exception::checkNull( #fn, fn args, __FILE__, __LINE__, message )
 
 #define CheckSys( fn, args ) \
-        masuma::utils::Exception::checkSys( #fn, fn args, __FILE__, __LINE__ )
+        masuma::system::Exception::checkSys( #fn, fn args, __FILE__, __LINE__ )
 
 #define CheckSysM( fn, args, message ) \
-        masuma::utils::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, message )
+        masuma::system::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, message )
 
 #define CheckErrno( fn, args ) errno = 0; \
-        masuma::utils::Exception::checkErrno( #fn, fn args, __FILE__, __LINE__ )
+        masuma::system::Exception::checkErrno( #fn, fn args, __FILE__, __LINE__ )
 
 #define CheckErrnoM( fn, args, message ) errno = 0; \
-        masuma::utils::Exception::checkErrno( #fn, fn args, __FILE__, __LINE__, message )
+        masuma::system::Exception::checkErrno( #fn, fn args, __FILE__, __LINE__, message )
 
 #define CheckSysFn( fn, args, errorHandler ) \
-        masuma::utils::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, errorHandler )
+        masuma::system::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, errorHandler )
 
 #define CheckSysNoThrow( fn, args ) \
-        masuma::utils::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, false )
+        masuma::system::Exception::checkSys( #fn, fn args, __FILE__, __LINE__, false )
 
 #define CheckCondition( cond ) \
-        masuma::utils::Exception::checkCondition( (cond), #cond, __FILE__, __LINE__ )
+        masuma::system::Exception::checkCondition( (cond), #cond, __FILE__, __LINE__ )
 
 #define CheckConditionM( cond, message) \
-        masuma::utils::Exception::checkCondition( (cond), #cond, __FILE__, __LINE__, message)
+        masuma::system::Exception::checkCondition( (cond), #cond, __FILE__, __LINE__, message)
 #endif
 #endif

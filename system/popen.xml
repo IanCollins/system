@@ -4,16 +4,16 @@
   $Id: popen.xml 15645 2011-11-24 21:34:02Z ian $
 -->
 
-<Library id="utils/popen" namespace="utils">
+<Library id="system/popen" namespace="system">
 
-  <StreamedType type="utils::OutputInfo"/>
+  <StreamedType type="system::OutputInfo"/>
 
-  <Function id="popen" return="utils::OutputInfo">
+  <Function id="popen" return="system::OutputInfo">
     <Parameter type="std::string" const="true" reference="true"/>
   </Function>
 
   <Function id="pclose" return="int">
-    <Parameter type="utils::OutputInfo" const="true" reference="true"/>
+    <Parameter type="system::OutputInfo" const="true" reference="true"/>
   </Function>
 
   <Class id="OutputInfo">
@@ -45,9 +45,9 @@
   <Class id="OutputPairReaders">
 
     <Constructor>
-      <Parameter type="utils::OutputInfo" const="true" reference="true"/>
-      <Parameter type="utils::StreamReader" reference="true"/>
-      <Parameter type="utils::StreamReader" reference="true"/>
+      <Parameter type="system::OutputInfo" const="true" reference="true"/>
+      <Parameter type="system::StreamReader" reference="true"/>
+      <Parameter type="system::StreamReader" reference="true"/>
     </Constructor>
 
     <Function id="close" return="int">

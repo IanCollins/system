@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2012.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -17,7 +17,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     inline char toHex( uint8_t n ) { return n < 10 ? '0'+n : ('a'-10)+n; }
 

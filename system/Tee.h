@@ -14,7 +14,7 @@
 #include <utility>
 #include <vector>
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct OutTee : OStreambuf
   {

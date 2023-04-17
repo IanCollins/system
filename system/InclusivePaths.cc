@@ -10,7 +10,7 @@
 
 #include <fstream>
 
-namespace masuma::utils
+namespace masuma::system
 {
   InclusivePaths::InclusivePaths( const Strings& paths )
   {

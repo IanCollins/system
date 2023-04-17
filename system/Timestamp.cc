@@ -15,7 +15,7 @@
 
 #include <cstdio>
 
-namespace masuma::utils
+namespace masuma::system
 {
   std::string
   timestamp( const tm& now )

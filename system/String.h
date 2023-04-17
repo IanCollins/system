@@ -18,7 +18,7 @@
 #include "Exception.h"
 #include "Types.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   using Strings = VectorWithJSON<std::string>;
 

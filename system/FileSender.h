@@ -18,7 +18,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class FileSender : public FileCommon
     {
@@ -59,7 +59,7 @@ namespace masuma
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     struct Summer;
 

@@ -15,7 +15,7 @@
 #include <memory>
 #include "Exception.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   class AutoFd
   {

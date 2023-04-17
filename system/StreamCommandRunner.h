@@ -2,7 +2,7 @@
  *
  *  PROJECT:     Utilities
  *
- *  MODULE:      utils
+ *  MODULE:      system
  *
  ******************************************************************************/
 #ifndef _utils_StreamCommandRunner_h_
@@ -16,7 +16,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     struct CommandFailedException : std::runtime_error
     {

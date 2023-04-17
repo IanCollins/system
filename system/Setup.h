@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2012.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -15,7 +15,7 @@
 #include "Log.h"
 #include "String.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   template <typename T> bool isSet( const T& t ) { return t != 0; }
 

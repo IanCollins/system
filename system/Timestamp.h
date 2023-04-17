@@ -13,7 +13,7 @@
 #include <string>
 #include "Time.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   std::string timestamp( const tm& now );
 

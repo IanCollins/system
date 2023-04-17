@@ -2,7 +2,7 @@
  *
  *  Copyright (c) Masuma Ltd 2009-2010.  All rights reserved.
  *
- *  MODULE:      utils
+ *  MODULE:      system
  *
  *******************************************************************************/
 
@@ -16,7 +16,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     template <typename T>
     struct MallocVector : std::vector<T*>

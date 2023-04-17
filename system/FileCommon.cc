@@ -15,7 +15,7 @@
 
 #include <unistd.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   const size_t FileCommon::bufferSize = 8*1024*1024;
 

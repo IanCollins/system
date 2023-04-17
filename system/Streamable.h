@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2012
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *  DESCRIPTION: Streamable types.
 *
@@ -15,7 +15,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     struct Streamable
     {

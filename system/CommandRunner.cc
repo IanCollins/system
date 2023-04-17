@@ -15,7 +15,7 @@
 #include <signal.h>
 #include <iostream>
 
-namespace masuma::utils
+namespace masuma::system
 {
   CommandRunnerActions::CommandRunnerActions( ReaderPair* p )
     : readers(p), keepRunning(true)
@@ -72,7 +72,7 @@ namespace masuma::utils
   bool
   CommandRunnerActions::operator()( const Strings& cmd )
   {
-    OutputInfo info = utils::popen( cmd, true );
+    OutputInfo info = system::popen( cmd, true );
 
     childId = info.childId();
 
@@ -81,13 +81,13 @@ namespace masuma::utils
 
     process();
 
-    return info.close( utils::oneSecond*10 );
+    return info.close( system::oneSecond*10 );
   }
 
   bool
   CommandRunnerActions::operator()( const std::string& cmd, int in )
   {
-    OutputInfo info = utils::popen( cmd, true );
+    OutputInfo info = system::popen( cmd, true );
 
     childId = info.childId();
 
@@ -97,7 +97,7 @@ namespace masuma::utils
 
     process();
 
-    return info.close( utils::oneSecond*10 );
+    return info.close( system::oneSecond*10 );
   }
 
   bool

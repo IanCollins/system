@@ -24,7 +24,7 @@ namespace masuma
     constexpr time_t oneDay    = oneHour*24;
   }
 
-  namespace utils
+  namespace system
   {
     constexpr int64_t oneThousand {1'000};
     constexpr int64_t oneMillion {oneThousand*1'000};

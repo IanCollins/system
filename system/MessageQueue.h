@@ -2,7 +2,7 @@
  *
  *  Copyright (c) Masuma Ltd 2003-2016
  *
- *  MODULE:      utils
+ *  MODULE:      system
  *
  *  DESCRIPTION: between thread queue
  *
@@ -17,7 +17,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     template <typename Message, typename Allocator=std::allocator<Message>>
     class MessageQueue

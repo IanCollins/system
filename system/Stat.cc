@@ -15,7 +15,7 @@
 #include <utime.h>
 #include <unistd.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   Stat::Stat()
   {

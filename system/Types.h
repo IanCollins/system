@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2013.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -14,7 +14,7 @@
 
 #include <vector>
 
-namespace masuma::utils
+namespace masuma::system
 {
   template <typename T>
   struct VectorWithJSON : std::vector<T>

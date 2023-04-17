@@ -13,7 +13,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class Path : public Strings
     {
@@ -30,8 +30,8 @@ namespace masuma
       using Strings::end;
 
       Path() {}
-      Path( const Path& other ) : utils::Strings(other) {}
-      Path( Path&& other ) : utils::Strings(other) {}
+      Path( const Path& other ) : system::Strings(other) {}
+      Path( Path&& other ) : system::Strings(other) {}
 
       explicit Path( std::string );
       explicit Path( const char* );

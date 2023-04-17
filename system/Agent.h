@@ -13,7 +13,7 @@
 #include "Exception.h"
 #include "SocketAutoFd.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   class Agent
   {

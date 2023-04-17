@@ -11,7 +11,7 @@
 #include "Time.h"
 #include "Exception.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   int64_t
   timeNow( clockid_t clock )

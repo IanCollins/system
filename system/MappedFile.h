@@ -15,7 +15,7 @@
 
 #include <memory>
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct MmapException : Exception
   {

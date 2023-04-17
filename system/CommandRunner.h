@@ -20,7 +20,7 @@
 #include "popen.h"
 #include "Poller.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct ReaderPair
   {

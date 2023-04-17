@@ -16,7 +16,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class FileCommon
     {

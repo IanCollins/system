@@ -15,7 +15,7 @@
 #include <sys/poll.h>
 #include <memory>
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct PollerAction
   {

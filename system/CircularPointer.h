@@ -16,7 +16,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     template <typename T, int Size, typename Iterator = T*>
     class CircularPointer

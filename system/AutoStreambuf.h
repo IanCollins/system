@@ -13,7 +13,7 @@
 #include "Streambuf.h"
 #include "AutoFd.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   class AutoStreamState
   {

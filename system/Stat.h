@@ -22,7 +22,7 @@
 
 #include <sys/stat.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct MissingFileException : std::runtime_error
   {

@@ -15,7 +15,7 @@
 #include "Timestamp.h"
 #include "Tee.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   class Log
   {
@@ -124,7 +124,7 @@ namespace masuma::utils
 
       fds << all << warn;
 
-      entrails.errBuf = new utils::OutTee( fds );
+      entrails.errBuf = new system::OutTee(fds );
     }
 
     static void useTimestamp( bool b ) { entrails.timestamp = b; }
@@ -188,6 +188,6 @@ namespace masuma::utils
   };
 }
 
-#define LOG_ENTRAILS_DEF namespace masuma { namespace utils { Log::Entrails Log::entrails; } }
+#define LOG_ENTRAILS_DEF namespace masuma { namespace system { Log::Entrails Log::entrails; } }
 
 #endif

@@ -19,7 +19,7 @@ namespace
   const short errorFlags( POLLNVAL | POLLERR | POLLHUP );
 }
 
-namespace masuma::utils
+namespace masuma::system
 {
   int AutoFd::Data::active {};
   

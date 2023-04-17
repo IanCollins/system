@@ -11,7 +11,7 @@
 #include "Exception.h"
 #include <execinfo.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   int Exception::backtraceDepth {};
 

@@ -14,7 +14,7 @@
 
 #include <utility>
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   Path::fromString( std::string path )

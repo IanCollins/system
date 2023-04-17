@@ -17,7 +17,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   FileReceiver::receive( AutoFd from, AutoFd to, size_t fileSize )

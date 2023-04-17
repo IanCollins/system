@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2012-2016.  All rights reserved.
 *
-*  MODULE:      utils transfer statistics
+*  MODULE:      system transfer statistics
 *
 *******************************************************************************/
 
@@ -13,7 +13,7 @@
 #include "Streamable.h"
 #include "Log.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   class TransferBytes : public Streamable
   {
@@ -39,7 +39,7 @@ namespace masuma::utils
     ValueUnit valueUnit( double scale = 1.0 ) const;
   };
 
-  class ElapsedTime : public utils::Streamable
+  class ElapsedTime : public system::Streamable
   {
     static const time_t oneMinute = 60;
     static const time_t oneHour   = oneMinute*60;

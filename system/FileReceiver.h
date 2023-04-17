@@ -15,7 +15,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class FileReceiver : public FileCommon
     {

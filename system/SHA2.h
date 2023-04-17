@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2014-2018.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -14,7 +14,7 @@
 #include <iostream>
 #include <iomanip>
 
-namespace masuma::utils
+namespace masuma::system
 {
   constexpr size_t sha2Size = 32;
 

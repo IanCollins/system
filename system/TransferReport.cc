@@ -2,7 +2,7 @@
 *
 *  Copyright (c) Masuma Ltd 2012-2016.  All rights reserved.
 *
-*  MODULE:      utils
+*  MODULE:      system
 *
 *******************************************************************************/
 
@@ -11,7 +11,7 @@
 
 #include <iomanip>
 
-namespace masuma::utils
+namespace masuma::system
 {
   TransferBytes::ValueUnit
   TransferBytes::valueUnit( double scale ) const
@@ -104,7 +104,7 @@ namespace masuma::utils
 
   uint64_t TransferReport::threshold = 1024 * 1024 * 1024;
 
-  TransferReport::TransferReport( utils::Log::Level level )
+  TransferReport::TransferReport( system::Log::Level level )
 #if defined CLOCK_HIGHRES
       : stopwatch {CLOCK_HIGHRES, true}, level {level}
 #else

@@ -31,7 +31,7 @@ namespace
   };
 }
 
-namespace masuma::utils
+namespace masuma::system
 {
   MappedFile::MappedFile( AutoFd fd, size_t size, int prot, int flags )
     : fd {std::move(fd)},
@@ -73,7 +73,7 @@ namespace masuma::utils
   }
 }
 
-namespace masuma::utils
+namespace masuma::system
 {
   ReadOnlyMappedFile::ReadOnlyMappedFile( const std::string& file, size_t size )
     : MappedFile { file, size, PROT_READ, MAP_SHARED }
@@ -86,7 +86,7 @@ namespace masuma::utils
   }
 }
 
-namespace masuma::utils
+namespace masuma::system
 {
   WriteOnlyMappedFile::WriteOnlyMappedFile( const std::string& file, size_t size )
     : MappedFile { file, size, PROT_WRITE, MAP_SHARED }

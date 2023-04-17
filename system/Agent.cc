@@ -13,7 +13,7 @@
 
 #include <stdexcept>
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   Agent::acceptConnection()

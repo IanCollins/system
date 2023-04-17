@@ -15,7 +15,7 @@
 #include <iomanip>
 #include <utility>
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   FileSender::send( AutoFd to, AutoFd from, size_t fileSize )
@@ -52,7 +52,7 @@ namespace masuma::utils
 
 #include "MD5.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   struct Summer
   {

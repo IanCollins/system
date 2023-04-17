@@ -17,7 +17,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class IStreambuf : virtual public std::streambuf
     {

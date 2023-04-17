@@ -15,7 +15,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     struct IFileStreambuf : IStreambuf
     {

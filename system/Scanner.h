@@ -28,7 +28,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     struct FilesystemTraits
     {
@@ -37,7 +37,7 @@ namespace masuma
         CheckSysM( lstat, (filepath.c_str(), sb), filepath );
       }
 
-      using Directory = utils::PosixDirectory;
+      using Directory = system::PosixDirectory;
     };
 
     template <typename Actions, typename Traits = FilesystemTraits>
@@ -90,7 +90,7 @@ namespace masuma
             Actions::processOther( entry, data );
           }
         }
-        catch( utils::Exception& e )
+        catch( system::Exception& e )
         {
           if( e.errVal() != ELOOP )
           {
@@ -119,7 +119,7 @@ namespace masuma
           dirPath.erase(dirPath.begin()+(dirPath.size()-1));
         }
 
-        auto tailHead = utils::splitLast( dirPath, '/' );
+        auto tailHead = system::splitLast( dirPath, '/' );
 
         if( tailHead.first.empty() )
         {
@@ -145,7 +145,7 @@ namespace masuma
     //
     struct BasicActions
     {
-      utils::Stat status;
+      system::Stat status;
 
       using DataType   =  std::string;
       using ReturnType = std::pair<bool,DataType>;

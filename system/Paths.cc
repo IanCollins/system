@@ -12,7 +12,7 @@
 #include "Path.h"
 #include "InclusivePaths.h"
 
-namespace masuma::utils
+namespace masuma::system
 {
   void
   Paths::removeChildrenOf( const Path& path )

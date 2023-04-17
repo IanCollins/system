@@ -10,7 +10,7 @@
 
 #include <tuple>
 
-namespace masuma::utils
+namespace masuma::system
 {
   template <typename T, typename Tuple>
   struct IndexOfIn;

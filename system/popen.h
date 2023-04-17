@@ -21,7 +21,7 @@
 
 namespace masuma
 {
-  namespace utils
+  namespace system
   {
     class OutputInfo
     {
