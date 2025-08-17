@@ -13,6 +13,7 @@
 #include <string>
 #include <sstream>
 #include <ctime>
+#include <cstdint>
 #include "Exception.h"
 
 namespace masuma

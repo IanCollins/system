@@ -8,9 +8,9 @@
             <mapping deploy="/tmp/tmp.EH0ko6BWsj" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-illumos" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-bionic" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
           </excludedPaths>
         </serverdata>
@@ -19,19 +19,6 @@
         <serverdata>
           <mappings>
             <mapping deploy="/tmp/tmp.E8EeYyqTsE" local="$PROJECT_DIR$" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-illumos" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release-bionic" />
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-release" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="bionic (08761b5d-8f42-46de-934b-cf84d12b011b)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/tmp.VTri8Q3Sxl" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
