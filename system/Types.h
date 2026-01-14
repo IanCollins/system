@@ -13,6 +13,7 @@
 #endif
 
 #include <vector>
+#include <stdint.h>
 
 namespace masuma::system
 {

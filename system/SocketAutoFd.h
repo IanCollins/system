@@ -85,6 +85,7 @@ namespace masuma::system
 
   struct TcpSocketAutoFd : SocketAutoFd
   {
+    using SocketAutoFd::operator=;
     TcpSocketAutoFd();
   };
 }
