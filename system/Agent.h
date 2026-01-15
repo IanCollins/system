@@ -1,5 +1,5 @@
 /******************************* C++ Header File *******************************
- *
+*
  *  Copyright (c) Masuma Ltd 2008-2013.  All rights reserved.
  *
  *  DESCRIPTION: Generic TCP server agent
@@ -31,6 +31,7 @@ namespace masuma::system
     const uint16_t port;
     TcpSocketAutoFd fd;
     SocketAutoFd readSocket;
+    long timeout {};
 
     virtual void process() = 0;
     [[nodiscard]] virtual std::string name() const = 0;
@@ -49,5 +50,10 @@ namespace masuma::system
     void acceptConnection();
 
     void run( bool forever );
+
+    void setTimeout( const timespec& ts )
+    {
+      timeout = ts.tv_sec*1'000 + ts.tv_nsec/1'000'000;
+    }
   };
 }
