@@ -8,7 +8,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 set(CMAKE_CXX_FLAGS "-Wall -Werror -Wno-sign-compare")
 
-include_directories(include)
+include_directories(include/system)
 
 add_library(masuma-system STATIC Exception.cc
                          SocketAutoFd.cc
@@ -20,23 +20,9 @@ add_library(masuma-system STATIC Exception.cc
                          Timestamp.cc)
 
 install(TARGETS masuma-system DESTINATION lib)
-install(FILES
-        include/Exception.h
-        include/SocketAutoFd.h
-        include/Agent.h
-        include/AutoFd.h
-        include/Time.h
-        include/NetDb.h
-        include/Timestamp.h
-        include/Log.h
-        include/String.h
-        include/Types.h
-        include/Typelist.h
-        include/Tee.h
-        include/Streambuf.h
-        include/AutoStreambuf.h
-        include/Stat.h
-        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}")
+install(DIRECTORY
+        include/system
+        DESTINATION "${CMAKE_INSTALL_PREFIX}/masuma")
 
 set(CPACK_GENERATOR "TGZ")
 set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/build")
