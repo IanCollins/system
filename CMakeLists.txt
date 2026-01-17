@@ -10,16 +10,18 @@ set(CMAKE_CXX_FLAGS "-Wall -Werror -Wno-sign-compare")
 
 include_directories(include/system)
 
-add_library(masuma-system STATIC Exception.cc
-                         SocketAutoFd.cc
-                         Agent.cc
-                         AutoFd.cc
-                         Time.cc
-                         NetDb.cc
-                         Stat.cc
-                         Timestamp.cc)
+add_library(System STATIC
+         Exception.cc
+         SocketAutoFd.cc
+         Agent.cc
+         AutoFd.cc
+         Time.cc
+         NetDb.cc
+         Stat.cc
+         Timestamp.cc)
+add_library(masuma::System ALIAS System)
 
-install(TARGETS masuma-system DESTINATION lib)
+install(TARGETS System DESTINATION lib)
 install(DIRECTORY
         include/system
         DESTINATION "${CMAKE_INSTALL_PREFIX}/masuma")
