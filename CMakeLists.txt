@@ -18,13 +18,14 @@ add_library(System STATIC
          Time.cc
          NetDb.cc
          Stat.cc
+         Time.cc
          Timestamp.cc)
 add_library(masuma::System ALIAS System)
 
 install(TARGETS System DESTINATION lib)
 install(DIRECTORY
         include/system
-        DESTINATION "${CMAKE_INSTALL_PREFIX}/masuma")
+        DESTINATION "${CMAKE_INSTALL_PREFIX}/include/masuma")
 
 set(CPACK_GENERATOR "TGZ")
 set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/build")
